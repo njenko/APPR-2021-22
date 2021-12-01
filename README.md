@@ -12,15 +12,15 @@ V sklopu mojega projekta si bom pogledal statistike igralcev v angleški Premier
 ## Podatki:
 
 1. **Statistika Igralcev** (https://understat.com/league/EPL)
-* Ime Igralca 
-* Ekipa
-* Status
-* Goli
-* Asistence
-* xG90
-* xA90
-* xG90+xA90
-* xCS
+    * 'Ime Igralca'
+    * Ekipa
+    * Status
+    * Goli
+    * Asistence
+    * xG90
+    * xA90
+    * xG90+xA90
+    * xCS
 
 
 2. **Seznam PL Igralcev** (Stolpci: Ime Igralca, Ekipa, Pozicija, Nacionalnost)
