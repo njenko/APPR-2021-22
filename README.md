@@ -14,19 +14,19 @@ V sklopu mojega projekta si bom pogledal statistike igralcev v angleški Premier
 1. **Statistika Igralcev** (https://understat.com/league/EPL)
     * `Ime Igralca`
     * `Ekipa`
-    * `Status`
+    * `Status` - (poškodovan, suspendiran,...)
     * `Goli`
     * `Asistence`
-    * `xG90`
-    * `xA90`
-    * `xG90+xA90`
-    * `xCS`
+    * `xG90` - Pričakovani goli
+    * `xA90` - Pričakovane asistence
+    * `xG90+xA90` - Pričakovano sodelovanje pri golih
+    * `xCS` - Pričakovanje "cleen sheet-a"
 
 
 2. **Seznam PL Igralcev** (https://www.premierleague.com/players)
     * `Ime Igralca`
     * `Ekipa`
-    * `Pozicija`
+    * `Pozicija` (GK, DEF, MID, FWD)
     * `Nacionalnost`
 
 3.  **Statistika Ekip** (https://understat.com/league/EPL)
@@ -37,12 +37,12 @@ V sklopu mojega projekta si bom pogledal statistike igralcev v angleški Premier
     * `Prejeti goli`
     * `Prejeti goli doma`
     * `Prejeti goli v gosteh`
-    * `xG`
-    * `xGA`
+    * `xG` - Pričakovani dani goli
+    * `xGA`- Pričakovani prejeti goli
 
 4. **Razpored tekem** (https://fantasy.premierleague.com/fixtures/fdr)
     * `Ime ekipe`
-    * `Nasprotniki v vsakem tednu`
+    * `Nasprotniki v vsakem tednu` (38 "gameweek-ov")
 
 
 ## Program
