@@ -2,7 +2,7 @@
 
 Avtor: Nejc Jenko
 
-##Analiza FPL Statistike
+## Analiza FPL Statistike
 
 ## Tematika
 
@@ -11,15 +11,24 @@ V sklopu mojega projekta si bom pogledal statistike igralcev v angleški Premier
 
 ## Podatki:
 
-* **Statistika Igralcev** (Stoplci: Ime Igralca, Ekipa, Status, Goli, Asistence, xG90, xA90, xG90+xA90, xCS)
-https://understat.com/league/EPL
+1. **Statistika Igralcev** (https://understat.com/league/EPL)
+* Ime Igralca 
+* Ekipa
+* Status
+* Goli
+* Asistence
+* xG90
+* xA90
+* xG90+xA90
+* xCS
 
-* **Seznam PL Igralcev** (Stolpci: Ime Igralca, Ekipa, Pozicija, Nacionalnost)
+
+2. **Seznam PL Igralcev** (Stolpci: Ime Igralca, Ekipa, Pozicija, Nacionalnost)
 https://www.premierleague.com/players
 
-* **Statistika Ekip** (Stolpci: Ime Ekipe, Dani goli doma, Dani goli v gosteh, Prejeti goli doma, Prejeti goli v gosteh, xG, xGA)
+3.  **Statistika Ekip** (Stolpci: Ime Ekipe, Dani goli doma, Dani goli v gosteh, Prejeti goli doma, Prejeti goli v gosteh, xG, xGA)
 
-* **Razpored tekem** (Stopci: Ekipa, Nasprotniki v vseh "Gameweekih")
+4. **Razpored tekem** (Stopci: Ekipa, Nasprotniki v vseh "Gameweekih")
 https://fantasy.premierleague.com/fixtures/fdr
 
 
