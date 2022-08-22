@@ -6,7 +6,7 @@ library(XML)
 # Tabla s seznamom igralcev in njihovimi državami
 url <- 'https://www.premierleague.com/players'
 
-driver <- rsDriver(browser=c("firefox"), port = 4445)
+driver <- rsDriver(browser=c("firefox"), port = 4445L)
 remote_driver <- driver[["client"]]
 remote_driver$navigate(url)
 scroll_d <- remote_driver$findElement(using = "css", value = "body")
