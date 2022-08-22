@@ -12,7 +12,6 @@ remote_driver$navigate(url)
 scroll_d <- remote_driver$findElement(using = "css", value = "body")
 scroll_d$sendKeysToElement(list(key = "end"))
 
-#parse it
 players_EPL <- read_html(scroll_d) %>% html_table(fill = TRUE) %>%
   .[[1]]
 
