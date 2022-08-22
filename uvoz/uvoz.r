@@ -23,4 +23,7 @@ library(XML)
 player_stats <- read.csv("Podatki/understat_player.csv", header = TRUE, skip = 2)
 
 # Tabela z igralci in nacionalnostmi
-players_EPL <- read.csv("Podatki/PL_Players.csv", header = TRUE, skip = 2)
+players_EPL <- read.csv("Podatki/PL_Players.csv", header = TRUE, skip = 2) 
+players_EPL <- players_EPL[-c(4, 5)]
+
+
