@@ -2,6 +2,7 @@
 library(RSelenium)
 library(rvest)
 library(XML)
+library(dplyr)
 
 
 
@@ -31,8 +32,11 @@ player_stats_GW3 <- player_stats_GW3[order(player_stats_GW3$player_name), ]
 
 # Tabela z igralci in nacionalnostmi
 players_EPL <- read.csv("Podatki/PL_Players.csv", header = TRUE, skip = 2) 
-players_EPL <- players_EPL[-c(4, 5)] #%>% rename(player_name = Player) 
+players_EPL <- players_EPL[-c(4, 5)]
 players_EPL <- players_EPL[order(players_EPL$Player), ]
 
 
-players_nat_goals <- merge(players_EPL, player_stats_GW3, by.x = 1, by.y = 2, all.y = T)
+# Združimo v tabelo statistiko GW3 in podatke o pozicijah ter nacionalnostih
+# Left-join, saj je v tabeli z igralci veliko vec igralcev, ki še niso/ne bodo igrali
+players_nat_goals <- merge(players_EPL, player_stats_GW3, by.x = 1, by.y = 2, all.y = T) %>% select(-21) %>% drop_na()
+
