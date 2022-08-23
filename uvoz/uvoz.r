@@ -22,8 +22,8 @@ library(XML)
 
 
 # Tabela s statistikami
-player_stats <- read.csv("Podatki/understat_player.csv", header = TRUE, skip = 2) 
-player_stats <- player_stats[order(player_stats$player_name), ]
+player_stats_GW2 <- read.csv("Podatki/understat_player.csv", header = TRUE, skip = 2) 
+player_stats_GW2 <- player_stats[order(player_stats$player_name), ]
 
 # Tabela z igralci in nacionalnostmi
 players_EPL <- read.csv("Podatki/PL_Players.csv", header = TRUE, skip = 2) 
