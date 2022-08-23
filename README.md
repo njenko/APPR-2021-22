@@ -6,18 +6,18 @@ Avtor: Nejc Jenko
 
 ## Tematika
 
-V sklopu mojega projekta si bom pogledal statistike igralcev v angleški Premier Ligi pregledal točke, ki so jih na podlagi te statistike dobili igralci v dosedanjih krogih Fantasy Premier League-a. Nato bom poskušal s pregledom statistike ekip in pričakovanih vrednosti statistike igralcev (xG - pričakovani goli, xA - pričakovane asistence,...) napovedati uspešnost igralcev v naslednjih krogih igre. S tem želim določiti optimalno izbiro za igralca igre na podlagi dosedaj znanih informacij.
+V sklopu mojega projekta si bom pogledal statistike igralcev v angleški Premier Ligi, pregledal točke, ki so jih na podlagi te statistike dobili igralci v dosedanjih krogih Fantasy Premier League-a. Nato bom poskušal s pregledom statistike ekip in pričakovanih vrednosti statistike igralcev (xG - pričakovani goli, xA - pričakovane asistence,...) napovedati uspešnost igralcev v naslednjih krogih igre. S tem želim določiti optimalno izbiro za igralca igre na podlagi dosedaj znanih informacij.
 
 
 ## Podatki:
 
 1. **Statistika Igralcev** (https://understat.com/league/EPL)
     * `Ime Igralca`
-    * `Ekipa`
-    * `Status` - (poškodovan, suspendiran,...)
+    * `Odigrane tekme`
+    * `Odigrane minute`
     * `Goli`
-    * `Asistence`
     * `xG90` - Pričakovani goli
+    * `Asistence`
     * `xA90` - Pričakovane asistence
     * `xG90+xA90` - Pričakovano sodelovanje pri golih
     * `xCS` - Pričakovanje "cleen sheet-a"
@@ -25,24 +25,9 @@ V sklopu mojega projekta si bom pogledal statistike igralcev v angleški Premier
 
 2. **Seznam PL Igralcev** (https://www.premierleague.com/players)
     * `Ime Igralca`
-    * `Ekipa`
     * `Pozicija` (GK, DEF, MID, FWD)
     * `Nacionalnost`
 
-3.  **Statistika Ekip** (https://understat.com/league/EPL)
-    * `Ime Ekipe`
-    * `Dani goli`
-    * `Dani goli doma`
-    * `Dani goli v gosteh`
-    * `Prejeti goli`
-    * `Prejeti goli doma`
-    * `Prejeti goli v gosteh`
-    * `xG` - Pričakovani dani goli
-    * `xGA`- Pričakovani prejeti goli
-
-4. **Razpored tekem** (https://fantasy.premierleague.com/fixtures/fdr)
-    * `Ime ekipe`
-    * `Nasprotniki v vsakem tednu` (38 "gameweek-ov")
 
 
 ## Program
