@@ -38,5 +38,17 @@ players_EPL <- players_EPL[order(players_EPL$Player), ]
 
 # Združimo v tabelo statistiko GW3 in podatke o pozicijah ter nacionalnostih
 # Left-join, saj je v tabeli z igralci veliko vec igralcev, ki še niso/ne bodo igrali
-players_nat_goals <- merge(players_EPL, player_stats_GW3, by.x = 1, by.y = 2, all.y = T) %>% select(-21) %>% drop_na()
+players_nat_goals <- merge(players_EPL, player_stats_GW3, by.x = 1, by.y = 2, all.y = T) %>% 
+  select(-21) %>% 
+  drop_na()
 
+
+#Get the table with team stats from the website 
+url <- "https://fbref.com/en/comps/9/Premier-League-Stats"
+team_stats <- read_html(url) %>% 
+  html_table(fill=TRUE) %>% 
+  .[[3]]
+
+header <- as.character(as.vector(team_stats[1,]))
+names(team_stats) <- header
+team_stats <- team_stats[-1, ]
