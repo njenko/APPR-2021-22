@@ -52,3 +52,5 @@ team_stats <- read_html(url) %>%
 header <- as.character(as.vector(team_stats[1,]))
 names(team_stats) <- header
 team_stats <- team_stats[-1, ]
+
+players_nat_goals %>% write.csv("podatki/Tabela2.csv", fileEncoding = "utf8")
